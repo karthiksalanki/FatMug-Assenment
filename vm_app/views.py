@@ -95,7 +95,7 @@ def update_delete_Vendor(request,id):
 @api_view(['GET','POST'])
 def createPO(request):
     if request.method == 'GET':
-        name = request.data.get('vendor')
+        name = request.GET.get('vendor')
         purchase_order_list = Purchase_Order.objects.filter(vendor=name)
         serializer = Purchase_OrderSerializer(purchase_order_list,many=True)
         return Response({'status':200,'data':serializer.data})
