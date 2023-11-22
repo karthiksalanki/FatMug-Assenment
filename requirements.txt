@@ -1,0 +1,49 @@
+django==4.2.7
+django-import-export
+
+
+
+
+
+-------------------Payload's----------------------
+# To create Vendor
+{
+    "name" : "karthik",
+    "contact_details" : "8951908964",
+    "address" : "challakere",
+    "vendor_code" : "V1001"
+}
+
+
+#To create Purchase Order
+    {
+    "po_number" : "ord01",
+    "vendor" : "2" ,
+    "delivery_date" : "2023-11-25 15:18:16.000000",
+    "items" : "test-item" ,
+    "quantity" : "1",
+    "status" : "pending",
+    "quality_rating" : "3",
+    "issue_date" : "2023-11-24 15:18:16.000000",
+    "acknowledgment_date" : "2023-11-25 15:18:16.000000" 
+    }
+
+#To update Purchase Order
+
+    {
+    "po_number" : "ord01",
+    "vendor" : "2" ,
+    "delivery_date" : "2023-11-25 15:18:16.000000",
+    "items" : "test-item" ,
+    "quantity" : "1",
+    "status" : "pending",
+    "quality_rating" : "3",
+    "issue_date" : "2023-11-24 15:18:16.000000",
+    "acknowledgment_date" : "2023-11-25 15:18:16.000000" 
+    }
+
+#To update acknowledgment_date
+{
+    "acknowledgment_date" : "2023-11-25 15:18:16.000000" 
+    }
+
